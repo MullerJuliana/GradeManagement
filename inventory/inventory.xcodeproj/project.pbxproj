@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B25ABD62D48402B00223BCA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25ABD52D48402B00223BCA /* main.swift */; };
+		4B6A04992D499B7200EC943E /* CSV in Frameworks */ = {isa = PBXBuildFile; productRef = 4B6A04982D499B7200EC943E /* CSV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		4B25ABD22D48402B00223BCA /* inventory */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = inventory; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B25ABD52D48402B00223BCA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4B6A049A2D49A0F600EC943E /* schoolList.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schoolList.csv; sourceTree = "<group>"; };
+		4B6A049B2D4ADA1D00EC943E /* Inventory-Management */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Inventory-Management"; sourceTree = "<group>"; };
+		4BA643A22D51691100887149 /* Inventory-Management */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Inventory-Management"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B6A04992D499B7200EC943E /* CSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +46,7 @@
 		4B25ABC92D48402B00223BCA = {
 			isa = PBXGroup;
 			children = (
+				4BA643A22D51691100887149 /* Inventory-Management */,
 				4B25ABD42D48402B00223BCA /* inventory */,
 				4B25ABD32D48402B00223BCA /* Products */,
 			);
@@ -57,7 +63,9 @@
 		4B25ABD42D48402B00223BCA /* inventory */ = {
 			isa = PBXGroup;
 			children = (
+				4B6A049A2D49A0F600EC943E /* schoolList.csv */,
 				4B25ABD52D48402B00223BCA /* main.swift */,
+				4B6A049B2D4ADA1D00EC943E /* Inventory-Management */,
 			);
 			path = inventory;
 			sourceTree = "<group>";
@@ -78,6 +86,9 @@
 			dependencies = (
 			);
 			name = inventory;
+			packageProductDependencies = (
+				4B6A04982D499B7200EC943E /* CSV */,
+			);
 			productName = inventory;
 			productReference = 4B25ABD22D48402B00223BCA /* inventory */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 4B25ABC92D48402B00223BCA;
+			packageReferences = (
+				4B6A04972D499B7200EC943E /* XCRemoteSwiftPackageReference "CSV" */,
+			);
 			productRefGroup = 4B25ABD32D48402B00223BCA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -285,6 +299,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B6A04972D499B7200EC943E /* XCRemoteSwiftPackageReference "CSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yaslab/CSV.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B6A04982D499B7200EC943E /* CSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B6A04972D499B7200EC943E /* XCRemoteSwiftPackageReference "CSV" */;
+			productName = CSV;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4B25ABCA2D48402B00223BCA /* Project object */;
 }
